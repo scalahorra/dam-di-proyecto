@@ -6,7 +6,7 @@ import modelo.Cliente;
 
 public class ClienteDao implements Dao<Cliente>{
 	
-	private List<Cliente> clientes = new ArrayList<>();
+	List<Cliente> clientes = new ArrayList<>();
 	
 	public ClienteDao(List<Cliente> clientes) {
 		this.clientes = clientes;

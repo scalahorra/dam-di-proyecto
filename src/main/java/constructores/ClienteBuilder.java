@@ -20,20 +20,7 @@ public class ClienteBuilder {
 	
 		ClienteDao clienteDao = new ClienteDao(clientes);
 		
-		//duplicidadCodigo(codigoCliente, clientes);
-		
 		return new Cliente(codigoCliente, nombreCliente, telefono, fax, lineaDireccion1, ciudad, email, password, tipoDocumento);
-	}
-	
-	
-	// Excepciones
-	public static void duplicidadCodigo(int codigoCliente, List clientes) throws ExcepcionDuplicidad{
-		
-		List<Cliente> cli = clientes;
-		for(Cliente c : cli) {
-			if(c.getCodigoCliente() == codigoCliente) throw new ExcepcionDuplicidad();
-			else System.out.println("*** Usuario introducido correctamente");
-		} 
 	}
 	
 }
