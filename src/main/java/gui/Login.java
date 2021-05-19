@@ -6,7 +6,7 @@ import java.awt.event.ActionListener;
 
 import javax.swing.*;
 
-public class Login implements ActionListener{
+public class Login {
 
 	private JFrame frame;
 
@@ -75,17 +75,6 @@ public class Login implements ActionListener{
 		JButton botonMostrarPassword = new JButton();
 		botonMostrarPassword.setBounds(238,80,25,25);
 		frame.getContentPane().add(botonMostrarPassword);
-		
-		
-		botonLogin.addActionListener(this);
-		
-	}
-	
-	
-	@Override
-	public void actionPerformed(ActionEvent ae) {
-		
-		String nombreUsuario = campoUsuario.getText();
 		
 	}
 
