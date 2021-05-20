@@ -7,13 +7,14 @@ import constructores.PedidoBuilder;
 import dao.ClienteDao;
 import dao.PedidoDao;
 import excepciones.ExcepcionDuplicidad;
+import excepciones.ExcepcionEmail;
 import modelo.Cliente;
 import modelo.Cliente.TipoDocumento;
 import modelo.Pedido;
 
 public class App {
 
-	public static void main(String[] args) throws ExcepcionDuplicidad{
+	public static void main(String[] args) throws ExcepcionDuplicidad, ExcepcionEmail{
 		
 		// Creamos la lista de clientes
 		List<Cliente> clientes = new ArrayList<Cliente>();
