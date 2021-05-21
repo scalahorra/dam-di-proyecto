@@ -67,8 +67,8 @@ public class App {
 		System.out.println("*** PEDIDOS ***");
 		
 		// Creamos los pedidos
-		Pedido p1 = PedidoBuilder.buildPedido(1, new Date("5/12/2021"), new Date("5/20/2021"), new Date("5/18/2021"), "Enviado", null, 1);
-		Pedido p2 = PedidoBuilder.buildPedido(2, new Date("5/10/2021"), new Date("5/15/2021"), new Date("5/13/2021"), "Entregado", null, 2);
+		Pedido p1 = PedidoBuilder.buildPedido(1, new Date("5/12/2021"), new Date("5/20/2021"), new Date("5/18/2021"), "Enviado", "Hola", 1);
+		Pedido p2 = PedidoBuilder.buildPedido(2, new Date("5/10/2021"), new Date("5/15/2021"), new Date("5/13/2021"), "Entregado", "Hola 2", 2);
 		
 		// Guardamos los pedidos
 		pedidoDao.guardar(p1);

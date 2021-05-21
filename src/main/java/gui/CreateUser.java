@@ -56,14 +56,14 @@ public class CreateUser {
 		frame.getContentPane().setLayout(null);
 		
 		// Titulo
-		JLabel lblNewLabel = new JLabel("Creaci\u00F3n de CLIENTE");
-		lblNewLabel.setBounds(10, 11, 120, 30);
-		frame.getContentPane().add(lblNewLabel);
+		JLabel lblTitulo = new JLabel("Creaci\u00F3n de CLIENTE");
+		lblTitulo.setBounds(10, 11, 120, 30);
+		frame.getContentPane().add(lblTitulo);
 		
 		// Nombre cliente
-		JLabel lblNewLabel_1 = new JLabel("Nombre cliente");
-		lblNewLabel_1.setBounds(10, 72, 90, 14);
-		frame.getContentPane().add(lblNewLabel_1);
+		JLabel lblNombreCliente = new JLabel("Nombre cliente");
+		lblNombreCliente.setBounds(10, 72, 90, 14);
+		frame.getContentPane().add(lblNombreCliente);
 		
 		textField = new JTextField();
 		textField.setBounds(110, 69, 86, 20);
@@ -71,9 +71,9 @@ public class CreateUser {
 		textField.setColumns(10);
 		
 		// Telefono
-		JLabel lblNewLabel_2 = new JLabel("Tel\u00E9fono");
-		lblNewLabel_2.setBounds(10, 125, 60, 14);
-		frame.getContentPane().add(lblNewLabel_2);
+		JLabel lblTelefono = new JLabel("Tel\u00E9fono");
+		lblTelefono.setBounds(10, 125, 60, 14);
+		frame.getContentPane().add(lblTelefono);
 		
 		textField_1 = new JTextField();
 		textField_1.setBounds(110, 122, 86, 20);
@@ -82,9 +82,9 @@ public class CreateUser {
 		
 		
 		// Fax
-		JLabel lblNewLabel_3 = new JLabel("Fax");
-		lblNewLabel_3.setBounds(10, 178, 46, 14);
-		frame.getContentPane().add(lblNewLabel_3);
+		JLabel lblFax = new JLabel("Fax");
+		lblFax.setBounds(10, 178, 46, 14);
+		frame.getContentPane().add(lblFax);
 		
 		textField_2 = new JTextField();
 		textField_2.setBounds(110, 175, 86, 20);
@@ -92,9 +92,9 @@ public class CreateUser {
 		textField_2.setColumns(10);
 		
 		// Email
-		JLabel lblNewLabel_4 = new JLabel("Email");
-		lblNewLabel_4.setBounds(10, 231, 46, 14);
-		frame.getContentPane().add(lblNewLabel_4);
+		JLabel lblEmail = new JLabel("Email");
+		lblEmail.setBounds(10, 231, 46, 14);
+		frame.getContentPane().add(lblEmail);
 		
 		textField_3 = new JTextField();
 		textField_3.setBounds(110, 228, 86, 20);
@@ -102,9 +102,9 @@ public class CreateUser {
 		textField_3.setColumns(10);
 		
 		// Password
-		JLabel lblNewLabel_5 = new JLabel("Contrase\u00F1a");
-		lblNewLabel_5.setBounds(253, 72, 80, 14);
-		frame.getContentPane().add(lblNewLabel_5);
+		JLabel lblPassword = new JLabel("Contrase\u00F1a");
+		lblPassword.setBounds(253, 72, 80, 14);
+		frame.getContentPane().add(lblPassword);
 		
 		textField_4 = new JTextField();
 		textField_4.setBounds(360, 69, 86, 20);
@@ -112,9 +112,9 @@ public class CreateUser {
 		textField_4.setColumns(10);
 		
 		// Direccion
-		JLabel lblNewLabel_6 = new JLabel("Direcci\u00F3n");
-		lblNewLabel_6.setBounds(253, 125, 60, 14);
-		frame.getContentPane().add(lblNewLabel_6);
+		JLabel lblDireccion = new JLabel("Direcci\u00F3n");
+		lblDireccion.setBounds(253, 125, 60, 14);
+		frame.getContentPane().add(lblDireccion);
 		
 		textField_5 = new JTextField();
 		textField_5.setBounds(360, 122, 86, 20);
@@ -122,9 +122,9 @@ public class CreateUser {
 		textField_5.setColumns(10);
 		
 		// Ciudad
-		JLabel lblNewLabel_7 = new JLabel("Ciudad");
-		lblNewLabel_7.setBounds(253, 178, 46, 14);
-		frame.getContentPane().add(lblNewLabel_7);
+		JLabel lblCiudad = new JLabel("Ciudad");
+		lblCiudad.setBounds(253, 178, 46, 14);
+		frame.getContentPane().add(lblCiudad);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Madrid", "Barcelona", "Valencia", "Sevilla", "Zaragoza", "M\u00E1laga", "Murcia", "Palma", "Las Palmas", "Bilbao"}));
@@ -132,25 +132,25 @@ public class CreateUser {
 		frame.getContentPane().add(comboBox);
 		
 		// Tipo documento
-		JLabel lblNewLabel_8 = new JLabel("Tipo documento");
-		lblNewLabel_8.setBounds(300, 231, 95, 14);
-		frame.getContentPane().add(lblNewLabel_8);
+		JLabel lblTipoDocumento = new JLabel("Tipo documento");
+		lblTipoDocumento.setBounds(300, 231, 95, 14);
+		frame.getContentPane().add(lblTipoDocumento);
 		
-		JCheckBox chckbxNewCheckBox = new JCheckBox("DNI");
-		chckbxNewCheckBox.setBounds(263, 252, 50, 23);
-		frame.getContentPane().add(chckbxNewCheckBox);
+		JCheckBox chckbxDNI = new JCheckBox("DNI");
+		chckbxDNI.setBounds(263, 252, 50, 23);
+		frame.getContentPane().add(chckbxDNI);
 		
-		JCheckBox chckbxNewCheckBox_1 = new JCheckBox("NIE");
-		chckbxNewCheckBox_1.setBounds(381, 252, 97, 23);
-		frame.getContentPane().add(chckbxNewCheckBox_1);
+		JCheckBox chckbxNIE = new JCheckBox("NIE");
+		chckbxNIE.setBounds(381, 252, 97, 23);
+		frame.getContentPane().add(chckbxNIE);
 		
-		JButton btnNewButton = new JButton("CREAR");
-		btnNewButton.setBounds(107, 329, 89, 23);
-		frame.getContentPane().add(btnNewButton);
+		JButton btnCrear = new JButton("CREAR");
+		btnCrear.setBounds(107, 329, 89, 23);
+		frame.getContentPane().add(btnCrear);
 		
-		JButton btnNewButton_1 = new JButton("BORRAR");
-		btnNewButton_1.setBounds(253, 329, 89, 23);
-		frame.getContentPane().add(btnNewButton_1);
+		JButton btnBorrar = new JButton("BORRAR");
+		btnBorrar.setBounds(253, 329, 89, 23);
+		frame.getContentPane().add(btnBorrar);
 		
 		
 		

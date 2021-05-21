@@ -20,6 +20,7 @@ public class PedidoBuilder {
 	public static Pedido buildPedido(int codigoPedido, Date fechaPedido, Date fechaEsperada, Date fechaEntrega,
 			String estado, String comentarios, int codigoCliente) {
 		
+		//Comprobaciones.testExistenciaID(codigoPedido, clientes);
 		
 		return new Pedido(codigoPedido, fechaPedido, fechaEsperada, fechaEntrega, estado, comentarios, codigoCliente);
 	}
