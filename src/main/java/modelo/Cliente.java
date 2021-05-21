@@ -13,11 +13,12 @@ public class Cliente {
 	private String email;
 	private String password;
 	private TipoDocumento tipoDocumento;
+	private String codigoDocumento;
 	
 	
 	// Constructores
 	public Cliente(int codigoCliente, String nombreCliente, String telefono, String fax, String lineaDireccion1,
-			String ciudad, String email, String password, TipoDocumento tipoDocumento) {
+			String ciudad, String email, String password, TipoDocumento tipoDocumento, String codigoDocumento) {
 		super();
 		this.codigoCliente = codigoCliente;
 		this.nombreCliente = nombreCliente;
@@ -28,6 +29,7 @@ public class Cliente {
 		this.email = email;
 		this.password = password;
 		this.tipoDocumento = tipoDocumento;
+		this.codigoDocumento = codigoDocumento;
 	}
 	
 	public Cliente() {
@@ -108,6 +110,14 @@ public class Cliente {
 	public void setTipoDocumento(TipoDocumento tipoDocumento) {
 		this.tipoDocumento = tipoDocumento;
 	}
+	
+	public String getCodigoDocumento() {
+		return codigoDocumento;
+	}
+	
+	public void setCodigoDocumento(String codigoDocumento) {
+		this.codigoDocumento = codigoDocumento;
+	}
 
 	
 	// To String
@@ -115,7 +125,7 @@ public class Cliente {
 	public String toString() {
 		return "Cliente [codigoCliente = " + codigoCliente + ", nombreCliente = " + nombreCliente + ", telefono = " + telefono
 				+ ", fax = " + fax + ", lineaDireccion1 = " + lineaDireccion1 + ", ciudad = " + ciudad + ", email = " + email
-				+ ", password = " + password + ", tipoDocumento = " + tipoDocumento + "]";
+				+ ", password = " + password + ", tipoDocumento = " + tipoDocumento + ", codigoDocumento = " + codigoDocumento + "]";
 	}
 		
 }

@@ -17,9 +17,10 @@ public class PedidoBuilder {
 		
 	}
 	
-	public static Pedido buildPedido(int codigoPedido, String estado, String comentarios, int codigoCliente) {
+	public static Pedido buildPedido(int codigoPedido, Date fechaPedido, Date fechaEsperada, Date fechaEntrega,
+			String estado, String comentarios, int codigoCliente) {
 		
 		
-		return new Pedido(codigoPedido, estado, comentarios, codigoCliente);
+		return new Pedido(codigoPedido, fechaPedido, fechaEsperada, fechaEntrega, estado, comentarios, codigoCliente);
 	}
 }
