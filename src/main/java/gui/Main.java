@@ -16,6 +16,7 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import javax.swing.JTabbedPane;
 import javax.swing.JToolBar;
+import javax.swing.JList;
 
 public class Main {
 
@@ -91,6 +92,11 @@ public class Main {
 		// Pestana panel - clientes
 		JToolBar toolBar = new JToolBar();
 		tabbedPane.addTab("Clientes", null, toolBar, null);
+		
+		JList listClientes = new JList();
+		toolBar.add(listClientes);
+		
+		
 		
 		// Pestana panel - pedidos
 		JToolBar toolBar_1 = new JToolBar();

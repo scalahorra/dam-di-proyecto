@@ -185,14 +185,13 @@ public class CreateUser {
 		
 		
 		
-		
+		// Boton para crear un cliente
 		JButton btnCrear = new JButton("CREAR");
 		btnCrear.setBounds(107, 390, 89, 23);
 		frame.getContentPane().add(btnCrear);
 		btnCrear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				try {
-					
 					Cliente c1 = ClienteBuilder.buildCliente(Integer.parseInt(txtCodigoCliente.getText()), txtNombre.getText(),
 							txtTelefono.getText(), txtFax.getText(), txtDireccion.getText(), txtCiudad.getText(),
 							txtEmail.getText(), txtPassword.getText(), null, txtDocumento.getText());
@@ -210,6 +209,7 @@ public class CreateUser {
 			}
 		});
 		
+		// Boton para borrar todos los campos
 		JButton btnBorrar = new JButton("BORRAR");
 		btnBorrar.setBounds(244, 390, 89, 23);
 		frame.getContentPane().add(btnBorrar);
@@ -228,6 +228,18 @@ public class CreateUser {
 				grupoRBotones.clearSelection();
 			}
 		});
+		
+		JButton btnMenu = new JButton("Menu");
+		btnMenu.setBounds(173, 427, 89, 23);
+		frame.getContentPane().add(btnMenu);
+		btnMenu.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				frame.dispose();
+				Main.main(null);
+			}
+		});
+		
 	}
 	
 	List<Cliente> clientes = new ArrayList<Cliente>();

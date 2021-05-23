@@ -42,7 +42,6 @@ public class Login {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		
 		// Texto usuario
 		JLabel lblUsuario = new JLabel("Usuario");
 		lblUsuario.setBounds(10,20,80,25);
