@@ -152,13 +152,13 @@ public class CreateUser {
 		frame.getContentPane().add(lblTipoDocumento);
 		
 		// RBoton DNI
-		JRadioButton rdbtnDNI = new JRadioButton("DNI");
+		final JRadioButton rdbtnDNI = new JRadioButton("DNI");
 		rdbtnDNI.setBounds(258, 252, 109, 23);
 		grupoRBotones.add(rdbtnDNI);
 		frame.getContentPane().add(rdbtnDNI);
 		
 		// RBoton NIE
-		JRadioButton rdbtnNIE = new JRadioButton("NIE");
+		final JRadioButton rdbtnNIE = new JRadioButton("NIE");
 		rdbtnNIE.setBounds(369, 252, 109, 23);
 		grupoRBotones.add(rdbtnNIE);
 		frame.getContentPane().add(rdbtnNIE);
@@ -212,7 +212,22 @@ public class CreateUser {
 		
 		JButton btnBorrar = new JButton("BORRAR");
 		btnBorrar.setBounds(244, 390, 89, 23);
-		frame.getContentPane().add(btnBorrar);				
+		frame.getContentPane().add(btnBorrar);
+		btnBorrar.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				
+				txtCodigoCliente.setText(null);
+				txtNombre.setText(null);
+				txtTelefono.setText(null);
+				txtFax.setText(null);
+				txtDireccion.setText(null);
+				txtCiudad.setText(null);
+				txtEmail.setText(null);
+				txtPassword.setText(null);
+				txtDocumento.setText(null);
+				grupoRBotones.clearSelection();
+			}
+		});
 	}
 	
 	List<Cliente> clientes = new ArrayList<Cliente>();
