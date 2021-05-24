@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.Pane?>
 
 
-<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="jfxcontrolador.EjemploControlador">
    <children>
       <Pane prefHeight="600.0" prefWidth="800.0">
          <children>
