@@ -26,9 +26,9 @@ public class App {
 		// Creamos los clientes
 		Cliente cliente1 = ClienteBuilder.buildCliente(1, "Sergio", "4478544", "2478", "C. Pelicanillo",
 				"Zaragoza", "sergio@gmail.com", "hola", TipoDocumento.DNI, "12345678A");
-		Cliente cliente2 = ClienteBuilder.buildCliente(1, "Maria", "47896523", "88754", "Avda. Melancolia",
+		Cliente cliente2 = ClienteBuilder.buildCliente(2, "Maria", "47896523", "88754", "Avda. Melancolia",
 				"Madrid", "maria@gmail.com", "1234", TipoDocumento.NIE, "A12345678B");
-		Cliente cliente3 = ClienteBuilder.buildCliente(1, "Gonzalo", "47854124", "8952", "Plaza Roma",
+		Cliente cliente3 = ClienteBuilder.buildCliente(3, "Gonzalo", "47854124", "8952", "Plaza Roma",
 				"Tarragona", "gonzalo@gmail.com", "admin", TipoDocumento.DNI, "12345678A");
 		Cliente cliente4 = ClienteBuilder.buildCliente(4, "Laura", "412578956", "2451", "C. Golondrina",
 				"Huesca", "laura@gmail.com", "sasdfdsa", TipoDocumento.NIE, "A12345678V");
