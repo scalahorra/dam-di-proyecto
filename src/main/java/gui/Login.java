@@ -68,13 +68,35 @@ public class Login {
 		JButton btnLogin = new JButton("login");
 		btnLogin.setBounds(10,80,80,25);
 		frame.getContentPane().add(btnLogin);
+		btnLogin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				boolean accede=false;
+				if(txtUsuario.getText().equals("admin")||passPassword.getText().equals("admin")) {
+					accede = true;
+					frame.dispose();
+					Main.main(null);
+				}
+				else {
+					accede = false;
+					txtUsuario.setText(null);
+					passPassword.setText(null);
+				}
+				
+			}
+		});
 		
 		
 		// Boton mostrarPassword
 		JButton btnMostrarPassword = new JButton();
 		btnMostrarPassword.setBounds(238,80,25,25);
 		frame.getContentPane().add(btnMostrarPassword);
-		
+		btnMostrarPassword.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				boolean visible = true;
+				passPassword.setEchoChar((char)0);
+				
+			}
+		});
 	}
 
 }

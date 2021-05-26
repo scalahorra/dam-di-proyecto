@@ -21,6 +21,7 @@ public class PedidoBuilder {
 			String estado, String comentarios, int codigoCliente) {
 		
 		//Comprobaciones.testExistenciaID(codigoPedido, clientes);
+		//Comprobaciones.testFechaEsperada(null, fechaEsperada);
 		
 		return new Pedido(codigoPedido, fechaPedido, fechaEsperada, fechaEntrega, estado, comentarios, codigoCliente);
 	}

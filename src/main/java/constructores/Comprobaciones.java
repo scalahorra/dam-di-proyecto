@@ -1,5 +1,8 @@
 package constructores;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -53,4 +56,7 @@ public class Comprobaciones {
 			}
 			if(coincidencia=false) System.out.println("No existe ningún cliente con ese ID");
 		}
+		
+		// Comprobacion fecha de hoy
+		
 }
